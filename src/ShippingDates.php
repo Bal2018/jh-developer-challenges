@@ -7,13 +7,10 @@ namespace Jh\Shipping;
 
 class ShippingDates implements ShippingDatesInterface 
 { 
-    /**  
-    * @dataProvider datesProvider()
+    /**   
     * @param \DateTime $orderDate
-    * @return $deliveryDate
-    *
+    * @return \DateTime
     */
-
     public function calculateDeliveryDate(\DateTime $orderDate)
     {
         $stOrderDate = $orderDate -> format('Y-m-d');   
